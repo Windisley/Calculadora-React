@@ -18,7 +18,13 @@ export default {
        },
        translate: {
         centralize: "-50%",
-       }
+       },
+       screens: {
+        "mobasm": "300px",
+        'mobabs': '500px',
+        'tablet': '520px',
+  
+       },
     },
   },
   plugins: [],
