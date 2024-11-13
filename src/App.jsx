@@ -10,7 +10,14 @@ function App() {
    
       
       if(textnumber === "="){
-          setResult(eval(result.replace(/x/g, "*").toString()))
+        try {
+          const evaluatedResult = new Function("return " + result.replace(/x/g, "*"))();
+          setResult(evaluatedResult.toString());
+        } 
+  catch (error) {
+          
+  setResult("Error");
+        }
       }
       else if(textnumber == "AC"){
         setResult("")
