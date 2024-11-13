@@ -1,5 +1,5 @@
-import { useState, useRef } from 'react'
-import './App.css'
+import { useState } from 'react'
+
 
 function App() {
   
@@ -41,13 +41,13 @@ function App() {
           '>
              <div className='max-w-4/5 flex justify-center items-center'>
                 <input type="text" name="result" id="result" className='
-                  px-14 py-2 rounded-lg bg-graydark border border-secundary text-text
-                  text-base w-full outline-none text-end text-lg
+                  px-8 py-2 rounded-lg bg-graydark border border-secundary text-text
+                   w-full outline-none text-end text-lg
                 'value={result}/>
              </div>
 
              <div className='
-              w-full min-h-full my-6 grid mobasm:grid-cols-2 mobabs:grid-cols-3 tablet:grid-cols-5  
+             w-full min-h-full my-6 grid mobasm:grid-cols-2 mobabs:grid-cols-3 tablet:grid-cols-5  
              '>
                <button className='
                 w-full h-full border p-4 mobabs:text-xl text-text
