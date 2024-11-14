@@ -13,7 +13,7 @@ function App() {
         try {
           const evaluatedResult = new Function("return " + result.replace(/x/g, "*"))();
           setResult(evaluatedResult.toString());
-          // Funçao new Function
+        
         } 
   catch (error) {
           
